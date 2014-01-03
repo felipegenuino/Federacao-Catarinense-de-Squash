@@ -1,0 +1,683 @@
+
+
+    html, button, input, select, textarea {     color: #222; }
+    a:focus, *:focus, a, a:active {outline:none;}
+
+  label {margin-bottom: 0px;}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+    ::-moz-selection {  background: #b3d4fc;  text-shadow: none; }
+    ::selection {     background: #b3d4fc;     text-shadow: none; }
+
+/*  A better looking default horizontal rule */
+    hr {  display: block;  height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+    audio, canvas, img, video { vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+    fieldset {  border: 0; margin: 0;   padding: 0; }
+
+    /*  Allow only vertical resizing of textareas. */
+    textarea {  resize: vertical; }
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+    .browsehappy {    margin: 0.2em 0; background: #ccc;   color: #000;   padding: 0.2em 0;}
+
+
+/* ==========================================================================
+		Transições
+   ========================================================================== */
+*,
+.transition,
+a,
+.item-top-player,
+.news-item-inner,
+.player-list-item,
+.player-card {	
+	transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	}
+   
+.transition-none,
+.tooltip-usuario {
+            transition: none;
+        -ms-transition: none;
+    -webkit-transition: none;
+       -moz-transition: none;
+         -o-transition: none;
+}
+
+   
+
+/* ==========================================================================
+		GENERICOS
+   ========================================================================== */
+   
+    body{ font: 16px/26px 'open_sansregular', sans-serif;  }
+
+    h1, h2, h3, h4, h5, h6{ font-family: "open_sanslight", sans-serif; color: #555 }
+ 
+    h2.title {   font-size: 18px; border-left: 8px solid #ca7233;  padding-left: 15px ; color: #555}
+    h2.title strong {  float: left; font-family: "open_sanslight"; font-size: 36px;    line-height: 33px;  margin-right: 10px; width: 100%; }   
+    .wrapper {  margin: 0 auto;  width: 1026px;}
+
+    .button:hover {  background: none repeat scroll 0 0 #749A02;  color: #FFFFFF;}
+    .caption  .button {}
+    .button {   background: none repeat scroll 0 0 #C15912; border-radius: 6px; clear: both; color: #FFFFFF; font-size: 16px; padding: 10px 20px; text-decoration: none;}
+    .bloco-titulo {  margin-bottom: 20px; position: relative;     }
+    .veja-todas{    color: #777777;   font-size: 14px;margin-left: 25px; text-decoration: none; top: 0px;}
+    section {  padding: 30px 20px }
+    .clear{ clear: both} 
+    p span.label{margin: 0}
+
+/* ==========================================================================
+		HEADER
+   ========================================================================== */
+  .header-container {  border-bottom: 5px solid #C15912; position: relative;    }
+   header {  background: none repeat scroll 0 0 #FFFFFF;   width: 100%;}
+  .brand{  float: left; margin-top: 15px;}
+
+
+
+
+/* ==========================================================================
+        MENU OFF CANVAS
+   ========================================================================== */
+    .menu-off-canvas{}
+    .brand-white{width: 250px; height: 120px;}
+    .menu-off-canvas-left {    margin: 0;}
+    .menu-off-canvas-left .item-menu-primary{ display: block;     width: 100%;}
+    .menu-off-canvas-left .item-menu-primary a{ border-left: 8px solid transparent; color: #fff}
+      .menu-off-canvas-left .item-menu-primary a:hover{ color: #CA7233}
+    .menu-off-canvas-left .item-menu-primary.active, .menu-off-canvas-left .item-menu-primary:active  {  background: none repeat scroll 0 0 #222222 !important;  border-left: 8px solid #CA7233; color: #CA7233; }
+ 
+
+
+
+    .menu-off-canvas-right {    margin: 0;}
+    .menu-off-canvas-right .item-menu-primary{ display: block;     width: 100%;}
+    .menu-off-canvas-right .item-menu-primary a{ color: #fff; border-left: 8px solid transparent}
+        .menu-off-canvas-right .item-menu-primary a:hover{ color: #CA7233}
+    .menu-off-canvas-right .item-menu-primary.active, .menu-off-canvas-right .item-menu-primary:active {  background: none repeat scroll 0 0 #222222 !important;  border-left: 8px solid #CA7233; color: #FFFFFF; }
+ 
+
+/* ==========================================================================
+		PROFILE
+   ========================================================================== */
+	.top-profile {  float: right;  margin-top: 33px;}
+	.top-profile-gravatar {   margin-left: 20px;}
+	.top-profile-gravatar img {  border-radius: 50%;  width: 80px;}
+
+
+    /*Login*/
+    .campo-registro-critica-sugestao{margin-top: 20px}
+
+/* ==========================================================================
+		MENU MAIN
+   ========================================================================== */
+	.menu-primary {   float: right;  margin: 65px 0 0; }
+	
+	.item-menu-primary { float: left;  font-size: 18px; font-family: "open_sanslight";  list-style: none outside none;   padding: 5px 10px;}
+	.item-menu-primary a {text-decoration: none; color: #aaa}
+	.item-menu-primary.active a {text-decoration: none; color: #555}
+	.item-menu-primary a:hover {text-decoration: none; color: #555}
+   
+   
+   
+/* ==========================================================================
+		BANNER
+   ========================================================================== */
+  .banner-home{ height: 270px}
+  .banner-home li{ height: 270px}
+  .banner-container{     background:#666;  z-index: 2000 }
+  .banner-home .orbit-container{}
+  .banner-home .orbit-timer{}
+  .banner-home .orbit-slide-number{display: none;}
+  .banner-home .orbit-next{}
+  .banner-home .orbit-prev{}
+  .banner-home .slide-1{ background: url("../img/slide-1.jpg") repeat fixed top center rgba(0, 0, 0, 0)}
+  .banner-home .slide-2{ background: url("../img/slide-2.jpg") repeat fixed top center rgba(0, 0, 0, 0)}
+  .banner-home .slide-3{ background: url("../img/slide-3.jpg") repeat fixed center center rgba(0, 0, 0, 0)}
+
+
+
+  .caption.left{text-align: left;}
+  .caption.right{text-align: right;}
+	.caption { color: #FFFFFF;   font-family: "open_sanslight";  font-size: 1.3em;  line-height: 1.33;  padding: 46px 0 ; text-align: center;  z-index: 3000;}
+	.caption h2 {  color: #FFFFFF; font-family: "open_sansbold";  font-size: 50px; margin: 0; }
+	.caption p {  margin: 0 0 20px;}
+ 
+
+   
+   
+/* ==========================================================================
+		MAIN
+   ========================================================================== */
+    .main-container {  background: none repeat scroll 0 0 #DDDDDD;   z-index: 1000; }
+    .main-container-inner{}
+	.main{}
+
+    .carregando {  padding-top: 110px; text-align: center; color: #aaa; font-size: 32px; position: relative; z-index: 8000}
+      .carregando h2 {margin: 0 }
+    .content{}
+    .content img{width:100%}
+    .content p{  font-size: 14px;}
+
+ 
+ /* ==========================================================================
+		TOP PLAYERS
+   ========================================================================== */    
+
+	section.top-players { 	background: none repeat scroll 0 0 #FFFFFF; border-top: 1px solid #CCCCCC; margin: 0; padding: 20px 0 30px; width: 100%; }
+	.top-players { float: left; list-style: none outside none; margin: 0; padding: 0; 	width: 100%; }
+
+	.top-players hr {
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: -moz-use-text-color -moz-use-text-color #CCCCCC;
+		border-image: none;
+		border-style: none none dashed;
+		border-width: medium medium 1px;
+	}
+
+
+	.item-top-player { border: 1px solid transparent; float: left;   padding: 40px 0;   text-align: center;  }
+	.item-top-player:hover {border: 1px solid #ccc; background: #f2f2f2;    border-radius: 6px;   -moz-border-radius: 6px;    -webkit-border-radius: 6px;}
+	.item-top-player img{   border-radius: 50%;   -moz-border-radius: 50%;   -webkit-border-radius: 50%;}
+	.item-top-player h3 {  font-size: 24px;    margin: 0;}
+	.item-top-player h4 {   font-size: 16px;  margin: 0;}
+
+/* ==========================================================================
+		FOOTER
+   ========================================================================== */  
+    .footer-container{   }
+ 	.footer{ width: 100%; background:#0d3b2d; float:left}
+	.footer-bottom{   background:#0b3327;  color:#aaa; }
+	.footer-bottom a{ color:#aaa;  font-size: 12px;}
+	.footer-bottom a:hover{ color:#fff}
+	.footer-bottom ul { float: left; margin: 0 }
+	.footer-bottom ul li { display: block; float: left; font-size: 0.8em; list-style: none outside none; padding: 10px;}
+	.footer-bottom ul li a { font-family: "open_sansregular";    text-decoration: none; }
+	.footer-bottom ul li a strong{  }
+	.iten-nav-footer{}   
+	.iten-copyright-footer {    margin-right: 40px; font-size: 12px;}
+	.iten-email-footer {    }
+	.footer-item { color: #FFFFFF;  float: left;   padding: 40px 10px;}
+	.footer-item strong.date{   margin-right: 10px;}
+	.footer-item ul {  padding: 0;  margin: 0;}
+	.footer-item ul li { list-style: none outside none; text-transform: uppercase; }
+	.footer-item a { color: #aaa; font-size: 12px; text-decoration: none; font-family: "open_sanslight" }
+	.footer-item a:hover { color: #fff;   }
+	.footer-item h5 { color: #FFFFFF;  font-size: 14px; margin: 0; }
+  .footer-bottom-logotipo { float: left; margin-right: 20px; width: 100px; height: 52px; margin-top: 9px;}
+	.copyright{  float: left; margin-top: 27px;}
+
+ 
+/* ==========================================================================
+   blog
+   ========================================================================== */
+    .blog p{font-size: 0.8rem;}
+    figure 
+    figure img{width: 100%;}
+    figure { border: 1px solid #CCCCCC; float: left; margin: 0 20px 20px 0; padding: 5px;}
+    figure figcaption{   font-size: 0.7rem;}
+
+
+
+/* ==========================================================================
+   Orbit
+   ========================================================================== */
+    
+
+
+
+
+
+/* ==========================================================================
+   Página de notícias
+   ========================================================================== */
+    
+ /* --------- NEWS --------- */
+
+ .container-news{padding: 0; margin: 0}
+	section.news {}
+	.list-news{}
+	.news-item {  float: left; margin-bottom: 4px; overflow: hidden; position: relative;}
+    .news-item-box {   background: none repeat scroll 0 0 #FFFFFF;  border: 1px solid #CCCCCC; }
+	.news-item .box-thumb{ position: relative;}
+	.news-item .meta-date{ font-size: 12px;}
+	.news-item .box-thumb .meta-category { background: none repeat scroll 0 0 #A25642; bottom: 0; color: #FFFFFF; font-size: 13px; padding: 0 5px; position: absolute; right: 0;}	
+	.news-item .box-thumb .link-image{ display: block}
+	.news-item .box-thumb img{ width:100%}
+	.news-item .meta-category{}
+	.news-item .box-content { padding: 10px 20px 20px; position: relative;}
+	.news-item .meta-date { font-size: 12px; }
+	.news-item .box-content h2 { font-size: 14px; line-height: 20px;  margin: 0; position: relative;}
+
+.modal-content{}
+figure.box-imagem-destaque{}
+figure.box-imagem-destaque img{width: 100%;}
+figure.box-imagem-destaque .legenda{}
+
+figure.box-imagem-destaque { border: 1px solid #CCCCCC; float: left; margin: 0 20px 20px 0; padding: 5px;}
+figure.box-imagem-destaque figcaption{   font-size: 0.7rem; text-align: center;}
+
+
+.reveal-modal{ border-right: 20px solid #CA7233;}
+.logo-post{  float: right;}
+.post-meta-calendar{    margin-left: 20px;}
+
+.filtro-container {
+ 
+    width: 100%;
+}
+
+.filtro-noticias {float: left;  list-style: none outside none;}
+
+.filtro-noticia.local{}
+.filtro-noticias.categorias { }
+.filtro-noticias li { float: left; }
+.filtro-noticias li a { color: #999;  font-size: 0.9em; padding: 2px 5px }
+.filtro-noticias li a.selected {
+    background: none repeat scroll 0 0 #C15912;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5) inset;
+    color: #FFFFFF;
+}
+
+.filtro-noticia.local{}
+
+
+.link-image.video:after {
+    background: url("../img/play-overlay.png") no-repeat scroll center center transparent;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.news-item:hover .link-image.video:after {background: url("../img/play-overlay.png") no-repeat scroll center center rgba(193, 89, 18, 0.2)}
+
+
+
+/* ==========================================================================
+   Página de agenda
+   ========================================================================== */
+section.agenda{}
+.agenda-iframe {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 20px;
+}
+
+
+.agenda-iframe iframe{  width: 100%;}
+ .tabs {  margin-bottom: 0 !important; }
+ 
+ .tabs dd.active a {      
+  background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC; }
+
+ .tabs dd > a {
+    background: none repeat scroll 0 0 #EFEFEF;
+    color: #555;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 2rem 1.0625rem;
+}
+ .tabs dd {
+    float: left;
+    margin-bottom: 0 !important;
+    position: relative;
+    top: 1px;
+}
+
+.nav-agenda .agenda-santa-catarina {}
+.nav-agenda .agenda-brasil {}
+.nav-agenda .agenda-mundo {}
+
+
+.content-agenda {  background: none repeat scroll 0 0 #FFFFFF;  border: 1px solid #CCCCCC;  padding: 20px;}
+.content-agenda .agenda-santa-catarina {}
+.content-agenda .agenda-brasil {}
+.content-agenda .agenda-mundo {}
+ 
+
+.item-menu-agenda.active a{ font-family: "open_sanslight" ; background: #fff; }
+.item-menu-agenda.santa-catarina{border-right: 8px solid #ca7233; background: #e2e2e2}
+.item-menu-agenda.santa-catarina.active a{ }
+.item-menu-agenda.brasil{border-right: 8px solid #c15912; background: #f1f1f1}
+.item-menu-agenda.brasil.active a{ }
+.item-menu-agenda.internacional{border-right: 8px solid #8f4d1d; background: #e8e8e8}
+.item-menu-agenda.internacional.active a{ }
+
+
+#calendarTitle{ font-family: "open_sanslight"  !important; color: #555}
+
+
+
+/* ==========================================================================
+   Página de Ranking
+   ========================================================================== */
+
+	section.ranking {  }
+
+#tabela-ranking {  background: none repeat scroll 0 0 #FFFFFF; font-size: 14px; width: 100%;}
+#tabela-ranking thead {  background: none repeat scroll 0 0 #555555; color: #FFFFFF;}
+#tabela-ranking thead tr {background: none repeat scroll 0 0 #555555 !important}
+#tabela-ranking thead tr th { font-family: "open_sanssemibold" ; color: #fff}
+#tabela-ranking tr:nth-of-type(odd) { background-color:#eee;} 
+
+
+#tabela-ranking .coluna-a { padding-left: 30px;  text-align: left;  width: 323px;}
+#tabela-ranking .coluna-b {}
+#tabela-ranking .coluna-c {}
+#tabela-ranking .coluna-d {}
+#tabela-ranking .coluna-e {}
+#tabela-ranking .coluna-f {}
+#tabela-ranking .coluna-g {}
+#tabela-ranking .coluna-h {}
+#tabela-ranking .coluna-i {}
+#tabela-ranking .coluna-j {}
+#tabela-ranking .coluna-l {}
+
+	#tabela-ranking tbody{ }
+	#tabela-ranking tr{ }
+	#tabela-ranking tr th{ border: 1px solid #CCCCCC; }
+
+#tabela-ranking td {
+    border: 1px solid #CCCCCC;
+    padding: 4px 3px;
+    text-align: center;
+}
+
+
+.tooltip-usuario {
+    color: #555555;
+    text-decoration: none;
+}
+
+.tooltip-usuario:hover { color: #c15912; font-family: "open_sanssemibold"}
+
+
+.titulo-ranking {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border-bottom: 5px solid #CA7233 !important;
+    color: #777777 !important;
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+   Atletas
+   ========================================================================== */
+  .player-list{margin: 0; }
+.player-list-item {    height: 280px !important;
+    background: none repeat scroll 0 0 #CA7233;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    float: left;
+    list-style: none outside none;
+    overflow: hidden;
+    position: relative;
+    width: 190px;
+}
+
+  .player-list-item:hover{z-index: 2000;}
+   .player-list-item:hover img{ left: 240px;}
+  .player-list-item img {     
+    left: 0;     
+    position: absolute;     
+    top: 0;           
+    width: 100%;}
+  .player-list-item a{}
+
+.player-list-item:hover .player-card{ 
+  display: block;     
+  left: 0px;}
+
+.player-card{  height: 280px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    left: -240px;
+    position: absolute;
+   width: 190px;}
+.player-card-inner {
+    float: left;
+    margin: 0;
+    padding: 20px 10px;
+}
+.player-card-inner-item{ list-style: none outside none;}
+.player-card-inner-item img{}
+
+.player-card-inner-item h3 {
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.player-card-inner-item h4 {
+    color: #AAAAAA;
+    font-size: 16px; line-height: 10px;
+    }
+.player-card-inner-item h5{  margin: 0 0 10px;}
+.link-perfil-card{ color: #CA7233;     font-size: 15px;}
+
+
+
+
+/* ==========================================================================
+   contato
+   ========================================================================== */
+
+form.contato{  background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 20px;}
+
+
+/* ==========================================================================
+   Atletas
+   ========================================================================== */
+.atleta-bio {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 20px;
+}
+
+
+.atleta-bio ul {
+    font-size: 0.8em;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+        .atleta-bio li {}
+            .atleta-bio li strong{}
+
+
+            .atleta-noticias{} 
+             .atleta-noticias ul{    font-size: 0.8em;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;} 
+    .atleta-noticias ul li {
+      position: relative;
+    float: left;
+    width: 50%;
+}
+              .atleta-noticias ul li img{} 
+/* ==========================================================================
+   tab-bar
+   ========================================================================== */
+  .tab-bar section{ padding: 0}
+  .tab-bar section.middle {padding:0 0.625rem}
+  .tab-bar section.right-small span{ color: #FFFFFF; font-size: 22px; padding-left: 5px;}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+ 
+
+
+/* Small screens */
+@media only screen { 
+ .brand svg {  height: 90px; width: 100%; }
+ /* .reveal-modal{margin-left: -50%; width: 100%;} */
+   } 
+
+
+
+
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {  
+  .menu-primary {   margin: 0px }
+  .brand {  float: left;  width: 100%; height: 120px;}
+  .brand svg {     height: 100%;     width: 100%; }
+  .caption h2 {  font-size: 30px;  }
+  .player-card , .player-list-item {    height: 330px !important;    width: 240px;}
+
+ 
+
+
+
+ } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) { 
+  .player-card, .player-list-item {  height: 300px !important; width: 200px;}
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) { 
+  .player-card, .player-list-item { height: 270px !important;  width: 160px;}
+  .player-card-inner-item h5 { font-size: 1em;}
+} /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063) { } /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+
+
+
+ 
