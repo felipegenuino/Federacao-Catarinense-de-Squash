@@ -22,8 +22,6 @@ ___
 ![Página de atletas](https://raw.githubusercontent.com/felipegenuino/Federacao-Catarinense-de-Squash/gh-pages/_prototipo/5-atletas.jpg)  
 ___
 ![Dashboard profile](https://raw.githubusercontent.com/felipegenuino/Federacao-Catarinense-de-Squash/gh-pages/_prototipo/6-dashbord-profile.jpg)  
-___
-![Dashboard profile 2](https://raw.githubusercontent.com/felipegenuino/Federacao-Catarinense-de-Squash/gh-pages/_prototipo/dashbord-profile.jpg)  
 
 
 
